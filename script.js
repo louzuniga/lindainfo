@@ -29,5 +29,5 @@ $(function() {
 
   // Footer and copyright ************
   let d = new Date();
-  $('#copyright').text(`Copyright \u00A9 ${d.getFullYear()}  Lou Zuniga`);
+  $('#copyright').text(`Copyright \u00A9 ${d.getFullYear()}  Lourexel Zuniga`);
 });

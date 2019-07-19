@@ -284,7 +284,7 @@ footer {
   }
 
   /* Navigation bar responsive    */
-  .nav-list a:not(:first-child) {
+  .nav-list a {
     display: none;
   }
   .nav-list a.icon {
