@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background: url('./img/flower-hummingbird.jpg') no-repeat center center/cover;
+  background: url('./img/hummingbird-dark.jpg') no-repeat center center/cover;
   color: var(--primary-color);
 }
 
@@ -151,7 +151,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: url(./img/sunflower-field.png);
+  background: url(./img/sunflower-field.png) no-repeat center center/cover;
   left: 0;
   right: 0;
   display: flex;
