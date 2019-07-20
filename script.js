@@ -1,3 +1,31 @@
+// Navbar navigate to different pages
+function openPage(e, pageSection) {
+  let i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName('tabcontent');
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = 'none';
+  }
+  tablinks = document.getElementsByClassName('tablinks');
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(' active', '');
+  }
+  document.getElementById(pageSection).style.display = 'block';
+  e.currentTarget.className += ' active';
+}
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  let YS = { lat: 39.804705, lng: -83.890151 };
+  // The map, centered at Uluru
+  let map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: YS
+  });
+  // The marker, positioned at Uluru
+  let marker = new google.maps.Marker({ position: YS, map: map });
+}
+
 // /////////////////////////////////////////
 // jQuery Triggers*****************////////
 //////////////////////////////////////////

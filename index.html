@@ -25,31 +25,31 @@
 
     <!-- Navigation Bar -->
     <nav id="navbar">
-      <div class="nav-list" id="nav">
-        <a href="">About</a>
-        <a href="">Event</a>
-        <a href="">Gallery</a>
-        <a href="">Stories</a>
+      <div class="nav-list tab" id="nav">
+        <a class="tablinks" onclick="openPage(event, 'about')">About</a>
+        <a class="tablinks" onclick="openPage(event, 'event')">Event</a>
+        <a class="tablinks" onclick="openPage(event, 'gallery')">Gallery</a>
+        <a class="tablinks" onclick="openPage(event, 'stories')">Stories</a>
         <a class="icon">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </nav>
 
-    <main class="container overlay">
+    <main class="container">
       <!-- About Section -->
       <section>
-        <div id="about" class="section m-2">
+        <div id="about" class="tabcontent m-2">
           <h1 class="x-large text-center">Linda Marie Coughlin Romanyszyn</h1>
-          <div class="row">
-            <div class="col-3">
+          <div class="about-row">
+            <div class="about-col-3">
               <img
                 class="about-img"
                 src="./img/L-2009-school-pic.jpg"
                 alt="Linda's picture"
               />
             </div>
-            <div class="col-6">
+            <div class="about-col-6">
               <p class="about lead">
                 Linda was so much more than a daughter, mother, sister or
                 friend; she was that rare exception of a person who truly cared
@@ -130,6 +130,109 @@
           </div>
         </div>
       </section>
+
+      <!-- Event Information -->
+      <section>
+        <div id="event" class="tabcontent m-2">
+          <h2 class="x-large text-center">Linda’s Celebration of Life!</h2>
+          <p class="lead text-center">
+            Linda's celebration of life will be held at 4:00pm, Thursday, August
+            8, 2019 at:
+          </p>
+          <p class="lead text-center">
+            Jackson Lytle & Lewis, 322 Xenia Ave, Yellow Springs, OH 45387.
+          </p>
+          <img
+            class="jackson-lytle"
+            src="./img/jackson-lytle.png"
+            alt="Jackson-Lytle & Lewis Funeral Home"
+          />
+          <br />
+          <div id="map"></div>
+          <br />
+          <h3>Directions from Dayton:</h3>
+          <div class="lead">
+            <p>
+              > Get on US-35 E from S Ludlow St 4 min (1.1 mi)
+              <br />
+              > Continue on US-35 E. Take I-675 N to E Dayton Yellow Springs Rd
+              in Fairborn.
+              <br />
+              > Take exit 20 from I-675 N 12 min (12.9 mi)
+              <br />
+              > Continue on E Dayton Yellow Springs Rd. Drive to S Walnut St in
+              Yellow Springs 11 min (6.3 mi)
+              <br />
+              > Arrive at 322 Xenia Ave Yellow Springs
+            </p>
+          </div>
+
+          <h3>Directions from Springfield:</h3>
+          <div class="lead">
+            <p>
+              > Take S Yellow Springs St to US-68 S in Springfield Township 10
+              min (4.4 mi)
+              <br />
+              > Slight left onto US-68 S 7 min (5.3 mi)
+              <br />
+              > Drive to S Walnut St 2 min (0.3 mi)
+              <br />
+              > Arrive at 322 Xenia Ave
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section>
+        <div id="gallery" class="tabcontent m-2">
+          <h2 class="x-large text-center">Montage Tribute</h2>
+          <div>
+              <iframe width="100%" height="350" src="https://www.youtube.com/embed/h63t0X9cNsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <h2 class="x-large text-center">Picture Gallery</h2>
+          <!-- <div class="row">
+            <div class="col-4">
+              <img src="./img/L-2008-school-pic.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img src="./img/L-2009-school-pic.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img src="./img/L-2012-school-pic.jpg" alt="" />
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                  <img src="./img/L-2014-school-pic.jpg" alt="" />
+                </div>
+                <div class="col-4">
+                  <img src="./img/L-2015-school-pic.jpg" alt="" />
+                </div>
+                <div class="col-4">
+                  <img src="./img/L-2016-school-pic.jpg" alt="" />
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                      <img src="./img/Linda Senior HS.jpg" alt="" />
+                    </div>
+                    <div class="col-4">
+                      <img src="./img/LindaJuniorYear.png" alt="" />
+                    </div>
+                    <div class="col-4">
+                      <img src="./img/retro-linda.jpg" alt="" />
+                    </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Stories  -->
+      <section>
+        <div id="stories" class="tabcontent m-2">
+          <h2>Stories...</h2>
+        </div>
+      </section>
     </main>
 
     <footer role="content-info">
@@ -177,6 +280,11 @@
       </div>
     </footer>
     <!-- Scripts************* -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkVKKiPGslp94qsgk_uwIlUOIbDrLvz1k&callback=initMap"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>

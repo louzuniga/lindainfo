@@ -27,25 +27,25 @@ body {
 } */
 
 /* Grid Layout */
-.row {
+.about-row {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
   display: inline-flex;
   max-width: 1400px;
 }
-.row:after {
+.about-row:after {
   content: '';
   display: table;
   clear: both;
   max-width: 1400px;
 }
-.col-6 {
+.about-col-6 {
   float: left;
   /* width: 66.66666%; */
   padding: 10px;
 }
-.col-3 {
+.about-col-3 {
   float: left;
   /* width: 33.33333%; */
   padding: 10px;
@@ -134,10 +134,6 @@ body {
 }
 
 /* Navbar */
-#nav {
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 2;
-}
 .nav-list {
   overflow: hidden;
   position: fixed;
@@ -162,6 +158,7 @@ body {
   background-color: rgb(201, 194, 194);
   text-decoration: none;
   color: #333;
+  cursor: pointer;
 }
 .nav-list .fa-bars {
   color: #fff;
@@ -182,10 +179,70 @@ body {
   margin-top: 2.5rem;
   font-size: 22px;
   line-height: 1.2;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2;
+  border-radius: 5px;
 }
 
 .obituary {
   margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2;
+  border-radius: 5px;
+}
+
+#event {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2;
+  border-radius: 5px;
+}
+/* google maps */
+#map,
+.jackson-lytle {
+  width: 100%;
+  height: 350px;
+  background-color: grey;
+}
+
+/* picture gallery grid */
+.box {
+  height: 200px;
+  text-align: center;
+  padding-top: 30px;
+}
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+  width: 100%;
 }
 
 /* Pinwheel loader on reload */
@@ -274,12 +331,32 @@ footer {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 900px) {
-  .col-6,
+/* picture gallery grid */
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
   .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-12 {
     width: 100%;
   }
-  .row {
+}
+
+@media screen and (max-width: 900px) {
+  .about-col-6,
+  .about-col-3 {
+    width: 100%;
+  }
+  .about-row {
     display: block;
   }
 }
@@ -319,10 +396,10 @@ footer {
     margin: 1rem;
   }
 
-  .row,
+  .about-row,
   .container,
-  .col-3,
-  .col-6 {
+  .about-col-3,
+  .about-col-6 {
     padding: 0;
   }
 
