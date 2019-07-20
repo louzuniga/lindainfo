@@ -12,17 +12,19 @@ function openPage(e, pageSection) {
   document.getElementById(pageSection).style.display = 'block';
   e.currentTarget.className += ' active';
 }
+// Get the element with id="defaultOpen" and click on it
+document.getElementById('defaultOpen').click();
 
 // Initialize and add the map
 function initMap() {
-  // The location of Uluru
+  // The location
   let YS = { lat: 39.804705, lng: -83.890151 };
-  // The map, centered at Uluru
+  // The map, centered at the location
   let map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
+    zoom: 17,
     center: YS
   });
-  // The marker, positioned at Uluru
+  // The marker, positioned at the location
   let marker = new google.maps.Marker({ position: YS, map: map });
 }
 

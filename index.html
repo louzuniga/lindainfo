@@ -26,7 +26,9 @@
     <!-- Navigation Bar -->
     <nav id="navbar">
       <div class="nav-list tab" id="nav">
-        <a class="tablinks" onclick="openPage(event, 'about')">About</a>
+        <a class="tablinks" onclick="openPage(event, 'about')" id="defaultOpen"
+          >About</a
+        >
         <a class="tablinks" onclick="openPage(event, 'event')">Event</a>
         <a class="tablinks" onclick="openPage(event, 'gallery')">Gallery</a>
         <a class="tablinks" onclick="openPage(event, 'stories')">Stories</a>
@@ -186,43 +188,194 @@
       <!-- Gallery -->
       <section>
         <div id="gallery" class="tabcontent m-2">
+          <!-- youtube montage container -->
           <h2 class="x-large text-center">Montage Tribute</h2>
           <div>
-              <iframe width="100%" height="350" src="https://www.youtube.com/embed/h63t0X9cNsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              width="100%"
+              height="415"
+              src="https://www.youtube.com/embed/h63t0X9cNsE"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
-          <h2 class="x-large text-center">Picture Gallery</h2>
-          <!-- <div class="row">
-            <div class="col-4">
-              <img src="./img/L-2008-school-pic.jpg" alt="" />
-            </div>
-            <div class="col-4">
-              <img src="./img/L-2009-school-pic.jpg" alt="" />
-            </div>
-            <div class="col-4">
-              <img src="./img/L-2012-school-pic.jpg" alt="" />
+
+          <div class="my-3">
+            <h2 class="x-large text-center">Picture Gallery</h2>
+
+            <!-- gallery of pictures -->
+            <!-- row -->
+            <div class="slideshow-container">
+              <div>
+                <img class="box-content" src="./img/Turkey 1.jpg" alt="" />
+              </div>
+              <div>
+                <img class="box-content" src="./img/Turkey 2.jpg" alt="" />
+              </div>
+              <div>
+                <img class="box-content" src="./img/Ft Bragg 3.jpg" alt="" />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/retro-linda-mike.jpg"
+                  alt=""
+                />
+              </div>
             </div>
 
-            <div class="row">
-                <div class="col-4">
-                  <img src="./img/L-2014-school-pic.jpg" alt="" />
-                </div>
-                <div class="col-4">
-                  <img src="./img/L-2015-school-pic.jpg" alt="" />
-                </div>
-                <div class="col-4">
-                  <img src="./img/L-2016-school-pic.jpg" alt="" />
-                </div>
+            <!-- row -->
+            <div class="slideshow-container">
+              <div>
+                <img class="box-content" src="./img/Louisiana 1.jpg" alt="" />
+              </div>
+              <div>
+                <img class="box-content" src="./img/Louisiana 2.jpg" alt="" />
+              </div>
+              <div>
+                <img class="box-content" src="./img/Louisiana 3.jpg" alt="" />
+              </div>
+              <div>
+                <img class="box-content" src="./img/Louisiana 5.jpg" alt="" />
+              </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-4">
-                      <img src="./img/Linda Senior HS.jpg" alt="" />
-                    </div>
-                    <div class="col-4">
-                      <img src="./img/LindaJuniorYear.png" alt="" />
-                    </div>
-                    <div class="col-4">
-                      <img src="./img/retro-linda.jpg" alt="" />
-                    </div> -->
+            <!-- row -->
+            <div class="slideshow-container">
+              <div>
+                <img class="box-content" src="./img/Ft Bragg 1.jpg" alt="" />
+              </div>
+              <div>
+                <img class="box-content" src="./img/Ft Bragg 2.jpg" alt="" />
+              </div>
+              <div>
+                <img class="box-content" src="./img/Louisiana 4.png" alt="" />
+              </div>
+              <div>
+                <img class="box-content" src="./img/LindaSnow.png" alt="" />
+              </div>
+            </div>
+
+            <!-- row -->
+            <div class="slideshow-container">
+              <div>
+                <img class="box-content" src="./img/retro-linda.jpg" alt="" />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/LindaJuniorYear.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/Linda Senior HS.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/L-school-badges.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!-- row -->
+            <div class="slideshow-container">
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/L-2008-school-pic.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/L-2009-school-pic.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/l-2011-school-pic.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/L-2012-school-pic.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!-- row -->
+            <div class="slideshow-container">
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/l-2013-school-pic.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/L-2014-school-pic.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/L-2015-school-pic.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/L-2016-school-pic.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!-- row -->
+            <div class="slideshow-container">
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/15 Madeleine Coughlin.JPG"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/10 Madeleine Coughlin.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img class="box-content" src="./img/linda-nicole.png" alt="" />
+              </div>
+              <div>
+                <img
+                  class="box-content"
+                  src="./img/22 Madeleine Coughlin.png"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -243,7 +396,7 @@
           </li>
           <li class="footer-list">
             <a
-              href="mailto:lourexelzuniga@gmail.com?Subject=Personal-Portfolio"
+              href="mailto:lourexelzuniga@gmail.com?Subject=Linda's Memorial Page"
               class="social-icon"
             >
               <i class="fas fa-envelope-open"></i
@@ -280,12 +433,12 @@
       </div>
     </footer>
     <!-- Scripts************* -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
     <script
       async
       defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkVKKiPGslp94qsgk_uwIlUOIbDrLvz1k&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlk6lm7_MM5B4x10RY2EOUK8NwyQ7Rd8I&callback=initMap"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>
