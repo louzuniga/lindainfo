@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-143375643-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143375643-1');
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -52,7 +67,7 @@
               />
             </div>
             <div class="about-col-6">
-              <p class="about lead">
+              <p class="my-3 bg-overlay lead">
                 Linda was so much more than a daughter, mother, sister or
                 friend; she was that rare exception of a person who truly cared
                 about others and made life-altering impressions on those lucky
@@ -66,7 +81,7 @@
             </div>
           </div>
 
-          <div class="obituary">
+          <div class="my-3 bg-overlay">
             <h3 class="x-large text-center">Obituary</h3>
             <div class="lead">
               <p>
@@ -135,7 +150,7 @@
 
       <!-- Event Information -->
       <section>
-        <div id="event" class="tabcontent m-2">
+        <div id="event" class="bg-overlay tabcontent m-2">
           <h2 class="x-large text-center">Linda’s Celebration of Life!</h2>
           <p class="lead text-center">
             Linda's celebration of life will be held at 4:00pm, Thursday, August
@@ -150,37 +165,38 @@
             alt="Jackson-Lytle & Lewis Funeral Home"
           />
           <br />
-          <div id="map"></div>
-          <br />
-          <h3>Directions from Dayton:</h3>
-          <div class="lead">
-            <p>
-              > Get on US-35 E from S Ludlow St 4 min (1.1 mi)
-              <br />
-              > Continue on US-35 E. Take I-675 N to E Dayton Yellow Springs Rd
-              in Fairborn.
-              <br />
-              > Take exit 20 from I-675 N 12 min (12.9 mi)
-              <br />
-              > Continue on E Dayton Yellow Springs Rd. Drive to S Walnut St in
-              Yellow Springs 11 min (6.3 mi)
-              <br />
-              > Arrive at 322 Xenia Ave Yellow Springs
-            </p>
-          </div>
+          <div id="map" class="my-3"></div>
+          <div class="bg-overlay my-3">
+            <h3>Directions from Dayton:</h3>
+            <div class="lead">
+              <p>
+                > Get on US-35 E from S Ludlow St 4 min (1.1 mi)
+                <br />
+                > Continue on US-35 E. Take I-675 N to E Dayton Yellow Springs
+                Rd in Fairborn.
+                <br />
+                > Take exit 20 from I-675 N 12 min (12.9 mi)
+                <br />
+                > Continue on E Dayton Yellow Springs Rd. Drive to S Walnut St
+                in Yellow Springs 11 min (6.3 mi)
+                <br />
+                > Arrive at 322 Xenia Ave Yellow Springs
+              </p>
+            </div>
 
-          <h3>Directions from Springfield:</h3>
-          <div class="lead">
-            <p>
-              > Take S Yellow Springs St to US-68 S in Springfield Township 10
-              min (4.4 mi)
-              <br />
-              > Slight left onto US-68 S 7 min (5.3 mi)
-              <br />
-              > Drive to S Walnut St 2 min (0.3 mi)
-              <br />
-              > Arrive at 322 Xenia Ave
-            </p>
+            <h3>Directions from Springfield:</h3>
+            <div class="lead">
+              <p>
+                > Take S Yellow Springs St to US-68 S in Springfield Township 10
+                min (4.4 mi)
+                <br />
+                > Slight left onto US-68 S 7 min (5.3 mi)
+                <br />
+                > Drive to S Walnut St 2 min (0.3 mi)
+                <br />
+                > Arrive at 322 Xenia Ave
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -206,184 +222,274 @@
 
             <!-- gallery of pictures -->
             <!-- row -->
-            <div class="slideshow-container">
-              <div>
-                <img class="box-content" src="./img/Turkey 1.jpg" alt="" />
+            <div id="zoom-img">
+              <div class="slideshow-container">
+                <div>
+                  <img class="box-content" src="./img/Turkey 1.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/Turkey 2.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/Ft Bragg 3.jpg" alt="" />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/retro-linda-mike.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div>
-                <img class="box-content" src="./img/Turkey 2.jpg" alt="" />
-              </div>
-              <div>
-                <img class="box-content" src="./img/Ft Bragg 3.jpg" alt="" />
-              </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/retro-linda-mike.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
 
-            <!-- row -->
-            <div class="slideshow-container">
-              <div>
-                <img class="box-content" src="./img/Louisiana 1.jpg" alt="" />
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img class="box-content" src="./img/Louisiana 1.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/Louisiana 2.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/Louisiana 3.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/Louisiana 5.jpg" alt="" />
+                </div>
               </div>
-              <div>
-                <img class="box-content" src="./img/Louisiana 2.jpg" alt="" />
-              </div>
-              <div>
-                <img class="box-content" src="./img/Louisiana 3.jpg" alt="" />
-              </div>
-              <div>
-                <img class="box-content" src="./img/Louisiana 5.jpg" alt="" />
-              </div>
-            </div>
 
-            <!-- row -->
-            <div class="slideshow-container">
-              <div>
-                <img class="box-content" src="./img/Ft Bragg 1.jpg" alt="" />
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img class="box-content" src="./img/Ft Bragg 1.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/Ft Bragg 2.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/Louisiana 4.png" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/LindaSnow.png" alt="" />
+                </div>
               </div>
-              <div>
-                <img class="box-content" src="./img/Ft Bragg 2.jpg" alt="" />
-              </div>
-              <div>
-                <img class="box-content" src="./img/Louisiana 4.png" alt="" />
-              </div>
-              <div>
-                <img class="box-content" src="./img/LindaSnow.png" alt="" />
-              </div>
-            </div>
 
-            <!-- row -->
-            <div class="slideshow-container">
-              <div>
-                <img class="box-content" src="./img/retro-linda.jpg" alt="" />
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img class="box-content" src="./img/retro-linda.jpg" alt="" />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/LindaJuniorYear.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/Linda Senior HS.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/L-school-badges.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/LindaJuniorYear.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/Linda Senior HS.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/L-school-badges.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
 
-            <!-- row -->
-            <div class="slideshow-container">
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/L-2008-school-pic.jpg"
-                  alt=""
-                />
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/L-2008-school-pic.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/L-2009-school-pic.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/l-2011-school-pic.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/L-2012-school-pic.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/L-2009-school-pic.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/l-2011-school-pic.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/L-2012-school-pic.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
 
-            <!-- row -->
-            <div class="slideshow-container">
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/l-2013-school-pic.jpg"
-                  alt=""
-                />
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/l-2013-school-pic.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/L-2014-school-pic.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/L-2015-school-pic.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/L-2016-school-pic.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/L-2014-school-pic.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/L-2015-school-pic.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/L-2016-school-pic.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
 
-            <!-- row -->
-            <div class="slideshow-container">
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/15 Madeleine Coughlin.JPG"
-                  alt=""
-                />
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/15 Madeleine Coughlin.JPG"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/10 Madeleine Coughlin.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/linda-nicole.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/22 Madeleine Coughlin.png"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/10 Madeleine Coughlin.png"
-                  alt=""
-                />
+
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/21 Madeleine Coughlin.JPG"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/DSC02671.jpeg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/DSC02673.jpeg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/DSC02678.jpeg" alt="" />
+                </div>
               </div>
-              <div>
-                <img class="box-content" src="./img/linda-nicole.png" alt="" />
+
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img class="box-content" src="./img/B_0019.png" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/B_0155.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/B_0162.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/B_0214 (2).jpg" alt="" />
+                </div>
               </div>
-              <div>
-                <img
-                  class="box-content"
-                  src="./img/22 Madeleine Coughlin.png"
-                  alt=""
-                />
+
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img class="box-content" src="./img/DSC02690.JPG" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/DSC02700.JPG" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/DSC02712.JPG" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/DSC02689.jpeg" alt="" />
+                </div>
+              </div>
+
+              <!-- row -->
+              <div class="slideshow-container">
+                <div>
+                  <img class="box-content" src="./img/IMAG0173.jpg" alt="" />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/IMAG0184.jpg" alt="" />
+                </div>
+                <div>
+                  <img
+                    class="box-content"
+                    src="./img/21 Madeleine Coughlin.JPG"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img class="box-content" src="./img/D_0087 .png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- picture zoom modal container -->
+        <div class="modal"></div>
       </section>
 
       <!-- Stories  -->
       <section>
         <div id="stories" class="tabcontent m-2">
-          <h2>Stories...</h2>
+          <div class="">
+            <h2 class="x-large text-center">Stories...</h2>
+            <p class="lead">
+              It’s hard to forget someone who gave us so much to remember.
+              Please take a moment to share a memory, quote, funny story, etc.
+              Your words shared here will have lasting effects for those many of
+              us who love and grieve for Linda.
+            </p>
+          </div>
+          <h2>In Progess... Please come back soon.</h2>
         </div>
       </section>
     </main>

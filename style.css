@@ -177,32 +177,39 @@ body {
   display: none;
 }
 
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2;
+  border-radius: 5px;
+}
+
 /* About */
 .about-img {
   width: 18rem;
 }
 
 .about {
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
   font-size: 22px;
   line-height: 1.2;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  /* background-color: rgba(0, 0, 0, 0.5); 
   z-index: 2;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
-.obituary {
+/* .obituary {
   margin-top: 40px;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: 2;
   border-radius: 5px;
 }
 
 #event {
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: 2;
   border-radius: 5px;
-}
+} */
+
 /* google maps */
 #map,
 .jackson-lytle {
@@ -222,6 +229,33 @@ body {
   max-width: 220px;
   min-width: 220px;
   margin: 10px;
+}
+
+/* picture zoom modal */
+.modal {
+  display: none;
+  background: rgb(53, 51, 51);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* opacity: 0.97; */
+}
+
+/* .modal .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -150px;
+  color: #fff;
+} */
+
+.modal img,
+.modal span {
+  z-index: 10;
+  max-width: 1000px;
 }
 
 /* Pinwheel loader on reload */
