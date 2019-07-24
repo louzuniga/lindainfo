@@ -105,11 +105,16 @@ $(function() {
     }
   });
 
-  // navbar responsive
-  $('.page-nav').click(function(event) {
-    const targetElement = $(this).attr('href');
-    const targetPosition = $(targetElement).offset().top;
-    $('html, body').animate({ scrollTop: targetPosition - 50 }, 'slow');
+  // Stories Read more Read less
+  $('.story-hide').hide();
+  $('.read-more').show();
+
+  $('.read-more').click(() => {
+    $('.story-hide').toggle();
+
+    $('.read-more').text() === ' ...Show more'
+      ? $('.read-more').text(' ...Show more')
+      : $('.read-more').text(' ...Show less');
   });
 
   // Footer and copyright ************

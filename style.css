@@ -209,6 +209,7 @@ fieldset {
   color: #333;
   font-size: 20px;
 }
+
 .ty-modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -229,6 +230,15 @@ fieldset {
 .ty-close:focus {
   color: #000;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.read-more {
+  color: #0073a4;
+}
+
+.read-more:hover {
+  color: #69bfe4;
   cursor: pointer;
 }
 
