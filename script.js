@@ -28,12 +28,6 @@ function initMap() {
   let marker = new google.maps.Marker({ position: YS, map: map });
 }
 
-// let formReset = getElementById('form-reset');
-
-// formReset.addEventListener('click', function() {
-//   document.getElementById('story-form').reset();
-// });
-
 ///////////////////////////////////////////
 // Story Modal*****************///////////
 //////////////////////////////////////////
