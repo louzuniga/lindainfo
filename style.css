@@ -43,6 +43,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.none {
+  display: none;
+}
+
 /* Text Styles*/
 .x-large {
   font-size: 48px;
@@ -76,6 +80,12 @@ body {
 }
 .m-3 {
   margin: 3rem;
+}
+.my-3 {
+  margin: 3rem 0 0;
+}
+.my-1 {
+  margin: 1rem 0 0;
 }
 
 /* controls what's being viwed on load */
@@ -146,6 +156,80 @@ body {
   max-width: 220px;
   min-width: 220px;
   margin: 10px;
+}
+
+/* stories */
+fieldset {
+  border: none;
+}
+
+.story-input,
+.story-text-area {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(201, 194, 194);
+}
+
+.story-btn {
+  width: 90px;
+  height: 35px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+}
+
+.story-btn:hover {
+  background-color: rgb(201, 194, 194);
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Thank You Modal  */
+/* The Modal (background) */
+.ty-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.ty-text {
+  color: #333;
+  font-size: 20px;
+}
+.ty-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 60px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.ty-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.ty-close:hover,
+.ty-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* picture zoom modal */
@@ -316,5 +400,9 @@ footer {
   .modal span {
     z-index: 10;
     max-width: 300px;
+  }
+
+  .jackson-lytle {
+    height: 0%;
   }
 }

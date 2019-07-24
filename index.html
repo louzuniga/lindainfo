@@ -579,8 +579,8 @@
 
       <!-- Stories  -->
       <section>
-        <div id="stories" class="tabcontent m-2">
-          <div class="">
+        <div id="stories" class="tabcontent ">
+          <div class="m-2 bg-overlay">
             <h2 class="x-large text-center">Stories...</h2>
             <p class="lead">
               It’s hard to forget someone who gave us so much to remember.
@@ -589,7 +589,87 @@
               us who love and grieve for Linda.
             </p>
           </div>
-          <h2>In Progess... Please come back soon.</h2>
+
+          <!-- Start of Google Sheets Form-->
+          <div class="bg-overlay m-2">
+            <h2 class="x-large text-center my-3">Tell us a story!</h2>
+            <aside>
+              <p class="lead">
+                Your story about <em><b>Linda</b></em> can be long, short, a
+                poem, a quote or whatever you want to express...
+              </p>
+            </aside>
+          </div>
+
+          <form
+            id="story-form"
+            class="gform"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbyTTg4izhb_BgsZ0iBwwlq712eEOT4XkOHygi2MQ6_3pACqINxp/exec"
+          >
+            <div class="lead m-2 form-elements">
+              <fieldset class="my-1">
+                <label for="name">Name: </label>
+                <br />
+                <input
+                  id="name"
+                  class="story-input"
+                  name="name"
+                  placeholder="What did Linda call you?"
+                />
+              </fieldset>
+
+              <fieldset class="my-1">
+                <label for="message"
+                  >Please feel free to express yourself!
+                </label>
+                <br />
+                <textarea
+                  id="message"
+                  name="message"
+                  class="story-text-area"
+                  rows="10"
+                  placeholder="Use your words freely..."
+                ></textarea>
+              </fieldset>
+
+              <fieldset class="my-1">
+                <label for="color">A few words to describe Linda: </label>
+                <br />
+                <input
+                  id="color"
+                  class="story-input"
+                  name="color"
+                  placeholder="She loved to read."
+                />
+              </fieldset>
+
+              <fieldset class="none honeypot-field">
+                <label for="honeypot"
+                  >To help avoid spam, utilize a Honeypot technique with a
+                  hidden text field; must be empty to submit the form!
+                  Otherwise, we assume the user is a spam bot.</label
+                >
+                <input id="honeypot" type="text" name="honeypot" value="" />
+              </fieldset>
+
+              <!-- Trigger/Open The Modal -->
+              <button id="ty-btn" class="story-btn my-1 lead">
+                <i class="fa fa-paper-plane"></i>&nbsp;Post
+              </button>
+            </div>
+
+            <!-- Thank You Message -->
+            <!-- The Modal -->
+            <div id="tyModal" class="ty-modal">
+              <!-- Modal content -->
+              <div class="ty-modal-content">
+                <span id="form-reset" class="ty-close">&times;</span>
+                <p class="ty-text">Thank you for sharing your story...</p>
+              </div>
+            </div>
+          </form>
+          <!-- Google Sheets End -->
         </div>
       </section>
     </main>
@@ -639,8 +719,14 @@
       </div>
     </footer>
     <!-- Scripts************* -->
+    <!-- Submit the Form to Google Using "AJAX" -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="form-submission-handler.js"
+    ></script>
     <script
       async
       defer

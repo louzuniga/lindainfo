@@ -28,6 +28,44 @@ function initMap() {
   let marker = new google.maps.Marker({ position: YS, map: map });
 }
 
+// let formReset = getElementById('form-reset');
+
+// formReset.addEventListener('click', function() {
+//   document.getElementById('story-form').reset();
+// });
+
+///////////////////////////////////////////
+// Story Modal*****************///////////
+//////////////////////////////////////////
+let tyModal = document.getElementById('tyModal');
+
+// Get the button that opens the modal
+let btn = document.getElementById('ty-btn');
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName('ty-close')[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  tyModal.style.display = 'block';
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  tyModal.style.display = 'none';
+  location.reload();
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target === modal) {
+    tyModal.style.display = 'none';
+  }
+};
+
+// /////////////////////////////////////////
+// Image Zoom Modal*****************////////
+//////////////////////////////////////////
 // zoom image modal
 let images = document.querySelectorAll('#zoom-img img'),
   modal = document.querySelector('.modal');
@@ -50,30 +88,6 @@ images.forEach(function(image) {
 modal.addEventListener('click', function() {
   this.style.display = 'none';
 });
-
-// Google sheets for email about stories
-const TO_ADDRESS = 'louzuniga86@gmail.com';
-
-function doPost(e) {
-  try {
-    Logger.log(e); // the Google Script version of console.log see: Class Logger
-    MailApp.sendEmail(
-      TO_ADDRESS,
-      'Contact Form Submitted',
-      JSON.stringify(e.parameters)
-    );
-    // return json success results
-    return ContentService.createTextOutput(
-      JSON.stringify({ result: 'success', data: JSON.stringify(e.parameters) })
-    ).setMimeType(ContentService.MimeType.JSON);
-  } catch (error) {
-    // if error return this
-    Logger.log(error);
-    return ContentService.createTextOutput(
-      JSON.stringify({ result: 'error', error: e })
-    ).setMimeType(ContentService.MimeType.JSON);
-  }
-}
 
 // /////////////////////////////////////////
 // jQuery Triggers*****************////////
