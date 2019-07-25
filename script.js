@@ -111,10 +111,11 @@ $(function() {
 
   $('.read-more').click(() => {
     $('.story-hide').toggle();
+    $('.read-more').text(' ...Show less');
 
-    $('.read-more').text() === ' ...Show more'
-      ? $('.read-more').text(' ...Show more')
-      : $('.read-more').text(' ...Show less');
+    // $('.read-more').text() === ' ...Show more'
+    //   ? $('.read-more').text(' ...Show more')
+    //   : $('.read-more').text(' ...Show less');
   });
 
   // Footer and copyright ************
