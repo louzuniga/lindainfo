@@ -189,6 +189,13 @@ fieldset {
   cursor: pointer;
 }
 
+.story-design {
+  background: #fff;
+  z-index: 2;
+  border-radius: 5px;
+  color: #333;
+}
+
 /* Thank You Modal  */
 /* The Modal (background) */
 .ty-modal {
