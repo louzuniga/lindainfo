@@ -89,11 +89,11 @@ modal.addEventListener('click', function() {
 
 $(function() {
   //pinwheel loader
-  // $(window).on('load', () => {
-  //   $('.loader .inner-loader').fadeOut(300, () => {
-  //     $('.loader').fadeOut(500);
-  //   });
-  // });
+  $(window).on('load', () => {
+    $('.loader .inner-loader').fadeOut(300, () => {
+      $('.loader').fadeOut(500);
+    });
+  });
 
   // Navbar responsive function
   $('#nav').on('click', event => {
